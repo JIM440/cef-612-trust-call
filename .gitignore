@@ -1,10 +1,33 @@
+# Maven
 target/
+
+# Java
 *.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ
 .idea/
-.vscode/
 *.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS files
 .DS_Store
 Thumbs.db
-*.log
+
+# OpenSIPS
 *.pid
-*.fifo
+
+# Temporary files
+*.tmp
