@@ -1,22 +1,45 @@
 package com.trustcall.repository;
 
 import com.trustcall.model.CallerReputation;
-import java.util.HashMap;
-import java.util.Map;
+import com.trustcall.utils.DatabaseConnection;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class ReputationRepository {
 
-    private final Map<String, CallerReputation> database = new HashMap<>();
-
-    public ReputationRepository() {
-        database.put("1001",
-                new CallerReputation("1001", 95, "Trusted"));
-
-        database.put("1002",
-                new CallerReputation("1002", 15, "Suspected Spam"));
-    }
-
     public CallerReputation findByNumber(String phoneNumber) {
-        return database.get(phoneNumber);
+
+        String sql =
+                "SELECT number, score, status FROM reputation WHERE number = ?";
+
+        try (
+                Connection connection =
+                        DatabaseConnection.getConnection();
+
+                PreparedStatement statement =
+                        connection.prepareStatement(sql)
+        ) {
+            statement.setString(1, phoneNumber);
+
+            ResultSet resultSet =
+                    statement.executeQuery();
+
+            if (resultSet.next()) {
+                return new CallerReputation(
+                        resultSet.getString("number"),
+                        resultSet.getInt("score"),
+                        resultSet.getString("status")
+                );
+            }
+
+        } catch (Exception e) {
+            System.out.println(
+                    "Database error: " + e.getMessage()
+            );
+        }
+
+        return null;
     }
 }
