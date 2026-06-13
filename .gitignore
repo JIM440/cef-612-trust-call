@@ -3,21 +3,11 @@ target/
 
 # Java
 *.class
-*.jar
-*.war
-*.ear
 
-# IntelliJ
+# IDEs
 .idea/
-*.iml
-
-# Eclipse
-.project
-.classpath
-.settings/
-
-# VS Code
 .vscode/
+*.iml
 
 # Logs
 *.log
@@ -26,8 +16,9 @@ target/
 .DS_Store
 Thumbs.db
 
-# OpenSIPS
-*.pid
+# Environment
+.env
 
-# Temporary files
-*.tmp
+# OpenSIPS runtime
+*.pid
+*.sock
