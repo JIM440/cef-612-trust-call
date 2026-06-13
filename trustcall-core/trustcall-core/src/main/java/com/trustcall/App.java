@@ -5,10 +5,14 @@ import com.trustcall.controller.FraudController;
 import com.trustcall.controller.WangiriController;
 import com.trustcall.controller.SimSwapController;
 import com.trustcall.controller.CallAnalysisController;
+import com.trustcall.service.DemoDataResetService;
 
 public class App {
 
     public static void main(String[] args) {
+
+        DemoDataResetService resetService = new DemoDataResetService();
+        resetService.resetDemoData();
 
         System.out.println("=================================");
         System.out.println("      TRUSTCALL DEMO SYSTEM");
