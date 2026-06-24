@@ -19,22 +19,45 @@ public class UssdService {
             return "Invalid USSD request";
         }
 
+        request = request.trim();
+
+        if (request.startsWith("*123*") && request.endsWith("#")) {
+            return handleModernReputationLookup(request);
+        }
+
         if (request.startsWith("#123#")) {
-            return handleReputationLookup(request);
+            return handleOldReputationLookup(request);
+        }
+
+        if (request.startsWith("*55*") && request.endsWith("#")) {
+            return handleModernFraudReport(request);
         }
 
         if (request.startsWith("#55#")) {
-            return handleFraudReport(request);
+            return handleOldFraudReport(request);
         }
 
         return "Unknown USSD command";
     }
 
-    private String handleReputationLookup(String request) {
+    private String handleModernReputationLookup(String request) {
+        String phoneNumber = request
+                .replace("*123*", "")
+                .replace("#", "")
+                .trim();
 
-        String phoneNumber =
-                request.replace("#123#", "").trim();
+        return lookupReputation(phoneNumber);
+    }
 
+    private String handleOldReputationLookup(String request) {
+        String phoneNumber = request
+                .replace("#123#", "")
+                .trim();
+
+        return lookupReputation(phoneNumber);
+    }
+
+    private String lookupReputation(String phoneNumber) {
         CallerReputation reputation =
                 reputationRepository.findByNumber(phoneNumber);
 
@@ -47,8 +70,21 @@ public class UssdService {
                 + " | Status: " + reputation.getStatus();
     }
 
-    private String handleFraudReport(String request) {
+    private String handleModernFraudReport(String request) {
+        String payload = request
+                .replace("*55*", "")
+                .replace("#", "");
 
+        String[] parts = payload.split("\\*", 2);
+
+        if (parts.length < 2) {
+            return "Invalid report format. Use *55*number*reason#";
+        }
+
+        return saveFraudReport(parts[0], parts[1]);
+    }
+
+    private String handleOldFraudReport(String request) {
         String payload =
                 request.replace("#55#", "");
 
@@ -59,16 +95,14 @@ public class UssdService {
             return "Invalid report format. Use #55#number#reason";
         }
 
-        String phoneNumber =
-                parts[0].trim();
+        return saveFraudReport(parts[0], parts[1]);
+    }
 
-        String reason =
-                parts[1].trim();
-
+    private String saveFraudReport(String phoneNumber, String reason) {
         fraudRepository.save(
-                new FraudReport(phoneNumber, reason)
+                new FraudReport(phoneNumber.trim(), reason.trim())
         );
 
-        return "Report submitted for " + phoneNumber;
+        return "Report submitted for " + phoneNumber.trim();
     }
 }
