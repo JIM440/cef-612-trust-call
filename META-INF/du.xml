@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<deployable-unit>
+    <description>TrustCall JAIN SLEE Deployable Unit</description>
+
+    <component-jar>
+        <jar-name>trustcall-slee-1.0-SNAPSHOT.jar</jar-name>
+    </component-jar>
+</deployable-unit>

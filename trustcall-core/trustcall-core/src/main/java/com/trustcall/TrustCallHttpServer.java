@@ -11,25 +11,28 @@ import com.trustcall.repository.FraudRepository;
 import com.trustcall.repository.WangiriRepository;
 import com.trustcall.repository.SimSwapRepository;
 import com.trustcall.service.CallAnalysisService;
+import com.trustcall.service.UssdService;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.net.URLDecoder;
 
 public class TrustCallHttpServer {
 
     public static void main(String[] args) throws Exception {
 
         HttpServer server = HttpServer.create(
-                new InetSocketAddress(8080),
+                new InetSocketAddress(8081),
                 0
         );
 
         server.createContext("/decision", TrustCallHttpServer::handleDecision);
+        server.createContext("/ussd", TrustCallHttpServer::handleUssd);
 
         server.setExecutor(null);
 
-        System.out.println("TrustCall HTTP server running on port 8080");
+        System.out.println("TrustCall HTTP server running on port 8081");
 
         server.start();
     }
@@ -38,7 +41,7 @@ public class TrustCallHttpServer {
             throws IOException {
 
         String query = exchange.getRequestURI().getQuery();
-        String caller = extractCaller(query);
+        String caller = getQueryValue(query, "caller");
 
         String response;
 
@@ -48,14 +51,34 @@ public class TrustCallHttpServer {
             response = getDecision(caller);
         }
 
-        exchange.sendResponseHeaders(200, response.length());
+        sendResponse(exchange, response);
+    }
+
+    private static void handleUssd(HttpExchange exchange)
+            throws IOException {
+
+        String query = exchange.getRequestURI().getQuery();
+        String request = getQueryValue(query, "request");
+
+        UssdService ussdService = new UssdService();
+
+        String response =
+                ussdService.processRequest(request);
+
+        sendResponse(exchange, response);
+    }
+
+    private static void sendResponse(HttpExchange exchange, String response)
+            throws IOException {
+
+        exchange.sendResponseHeaders(200, response.getBytes().length);
 
         OutputStream outputStream = exchange.getResponseBody();
         outputStream.write(response.getBytes());
         outputStream.close();
     }
 
-    private static String extractCaller(String query) {
+    private static String getQueryValue(String query, String key) {
 
         if (query == null) {
             return null;
@@ -64,8 +87,15 @@ public class TrustCallHttpServer {
         String[] parts = query.split("&");
 
         for (String part : parts) {
-            if (part.startsWith("caller=")) {
-                return part.substring("caller=".length());
+            if (part.startsWith(key + "=")) {
+                try {
+                    return URLDecoder.decode(
+                            part.substring((key + "=").length()),
+                            "UTF-8"
+                    );
+                } catch (Exception e) {
+                    return null;
+                }
             }
         }
 

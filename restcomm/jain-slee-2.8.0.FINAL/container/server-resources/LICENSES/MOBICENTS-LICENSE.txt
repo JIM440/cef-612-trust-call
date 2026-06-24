@@ -1,0 +1,8 @@
+
+Mobicents JAIN SLEE 2.8 (or later version) is under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+See terms and conditions of the license at: http://www.gnu.org/licenses/agpl-3.0.html
+
+For custom licensing including license for commercial derivatives contact support@telestax.com.
+
+
