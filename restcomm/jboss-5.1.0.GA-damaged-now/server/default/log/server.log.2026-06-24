@@ -1,0 +1,494 @@
+2026-06-24 15:15:26,565 INFO  [org.jboss.web.WebService] (main) Using RMI server codebase: http://127.0.0.1:8083/
+2026-06-24 15:15:32,178 INFO  [org.jboss.wsf.stack.jbws.NativeServerConfig] (main) JBoss Web Services - Stack Native Core
+2026-06-24 15:15:32,179 INFO  [org.jboss.wsf.stack.jbws.NativeServerConfig] (main) 3.1.2.GA
+2026-06-24 15:15:32,595 INFO  [org.jboss.dependency.plugins.AttributeCallbackItem] (main) Owner callback not implemented.
+2026-06-24 15:15:33,309 INFO  [org.jboss.logbridge.LogNotificationListener] (main) Adding notification listener for logging mbean "jboss.system:service=Logging,type=Log4jService" to server org.jboss.mx.server.MBeanServerImpl@2b0eb8c3[ defaultDomain='jboss' ]
+2026-06-24 15:15:34,121 INFO  [org.mobicents.slee.container.deployment.jboss.SLEEDeployer] (main) Mobicents SLEE External Deployer initialized.
+2026-06-24 15:15:46,550 INFO  [org.jboss.ejb3.deployers.Ejb3DependenciesDeployer] (main) Encountered deployment AbstractVFSDeploymentContext@173231456{vfsfile:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/profileservice-secured.jar/}
+2026-06-24 15:15:46,553 INFO  [org.jboss.ejb3.deployers.Ejb3DependenciesDeployer] (main) Encountered deployment AbstractVFSDeploymentContext@173231456{vfsfile:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/profileservice-secured.jar/}
+2026-06-24 15:15:46,553 INFO  [org.jboss.ejb3.deployers.Ejb3DependenciesDeployer] (main) Encountered deployment AbstractVFSDeploymentContext@173231456{vfsfile:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/profileservice-secured.jar/}
+2026-06-24 15:15:46,553 INFO  [org.jboss.ejb3.deployers.Ejb3DependenciesDeployer] (main) Encountered deployment AbstractVFSDeploymentContext@173231456{vfsfile:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/profileservice-secured.jar/}
+2026-06-24 15:15:49,496 INFO  [org.jboss.mx.remoting.service.JMXConnectorServerService] (main) JMX Connector server: service:jmx:rmi://127.0.0.1/jndi/rmi://127.0.0.1:1090/jmxconnector
+2026-06-24 15:15:49,710 INFO  [org.jboss.mail.MailService] (main) Mail Service bound to java:/Mail
+2026-06-24 15:16:12,609 WARN  [org.jboss.jms.server.jbosssx.JBossASSecurityMetadataStore] (main) WARNING! POTENTIAL SECURITY RISK. It has been detected that the MessageSucker component which sucks messages from one node to another has not had its password changed from the installation default. Please see the JBoss Messaging user guide for instructions on how to do this.
+2026-06-24 15:16:12,620 WARN  [org.jboss.annotation.factory.AnnotationCreator] (main) No ClassLoader provided, using TCCL: org.jboss.managed.api.annotation.ManagementComponent
+2026-06-24 15:16:12,678 WARN  [org.jboss.annotation.factory.AnnotationCreator] (main) No ClassLoader provided, using TCCL: org.jboss.managed.api.annotation.ManagementComponent
+2026-06-24 15:16:13,592 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) JBossTS Transaction Service (JTA version - tag:JBOSSTS_4_6_1_GA) - JBoss Inc.
+2026-06-24 15:16:13,592 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Setting up property manager MBean and JMX layer
+2026-06-24 15:16:13,942 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Initializing recovery manager
+2026-06-24 15:16:14,147 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Recovery manager configured
+2026-06-24 15:16:14,148 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Binding TransactionManager JNDI Reference
+2026-06-24 15:16:14,205 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Starting transaction recovery manager
+2026-06-24 15:16:14,742 INFO  [org.apache.catalina.core.AprLifecycleListener] (main) The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2026-06-24 15:16:14,810 INFO  [org.apache.coyote.http11.Http11Protocol] (main) Initializing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2026-06-24 15:16:14,811 INFO  [org.apache.coyote.ajp.AjpProtocol] (main) Initializing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2026-06-24 15:16:14,841 INFO  [org.apache.catalina.core.StandardService] (main) Starting service jboss.web
+2026-06-24 15:16:14,844 INFO  [org.apache.catalina.core.StandardEngine] (main) Starting Servlet Engine: JBoss Web/2.1.3.GA
+2026-06-24 15:16:14,911 INFO  [org.apache.catalina.startup.Catalina] (main) Server startup in 99 ms
+2026-06-24 15:16:14,931 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/invoker
+2026-06-24 15:16:15,496 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/jbossws
+2026-06-24 15:16:15,538 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/web-console
+2026-06-24 15:16:15,880 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/jboss-local-jdbc.rar/META-INF/ra.xml
+2026-06-24 15:16:15,898 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/jboss-xa-jdbc.rar/META-INF/ra.xml
+2026-06-24 15:16:15,920 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/jms-ra.rar/META-INF/ra.xml
+2026-06-24 15:16:15,941 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/mail-ra.rar/META-INF/ra.xml
+2026-06-24 15:16:15,974 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/quartz-ra.rar/META-INF/ra.xml
+2026-06-24 15:16:16,069 INFO  [org.quartz.simpl.SimpleThreadPool] (main) Job execution threads will use class loader of thread: main
+2026-06-24 15:16:16,107 INFO  [org.quartz.core.QuartzScheduler] (main) Quartz Scheduler v.1.5.2 created.
+2026-06-24 15:16:16,111 INFO  [org.quartz.simpl.RAMJobStore] (main) RAMJobStore initialized.
+2026-06-24 15:16:16,112 INFO  [org.quartz.impl.StdSchedulerFactory] (main) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-24 15:16:16,113 INFO  [org.quartz.impl.StdSchedulerFactory] (main) Quartz scheduler version: 1.5.2
+2026-06-24 15:16:16,113 INFO  [org.quartz.core.QuartzScheduler] (main) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2026-06-24 15:16:16,545 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (main) Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' to JNDI name 'java:DefaultDS'
+2026-06-24 15:16:17,072 INFO  [org.jboss.jms.server.ServerPeer] (main) JBoss Messaging 1.4.3.GA server [0] started
+2026-06-24 15:16:17,258 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) Connector bisocket://127.0.0.1:4457 has leasing enabled, lease period 10000 milliseconds
+2026-06-24 15:16:17,258 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) org.jboss.jms.server.connectionfactory.ConnectionFactory@34c060c7 started
+2026-06-24 15:16:17,271 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) Connector bisocket://127.0.0.1:4457 has leasing enabled, lease period 10000 milliseconds
+2026-06-24 15:16:17,271 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) org.jboss.jms.server.connectionfactory.ConnectionFactory@72900dbe started
+2026-06-24 15:16:17,272 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactoryJNDIMapper] (main) supportsFailover attribute is true on connection factory: jboss.messaging.connectionfactory:service=ClusteredConnectionFactory but post office is non clustered. So connection factory will *not* support failover
+2026-06-24 15:16:17,273 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactoryJNDIMapper] (main) supportsLoadBalancing attribute is true on connection factory: jboss.messaging.connectionfactory:service=ClusteredConnectionFactory but post office is non clustered. So connection factory will *not* support load balancing
+2026-06-24 15:16:17,275 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) Connector bisocket://127.0.0.1:4457 has leasing enabled, lease period 10000 milliseconds
+2026-06-24 15:16:17,275 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) org.jboss.jms.server.connectionfactory.ConnectionFactory@3905d9ac started
+2026-06-24 15:16:17,296 INFO  [org.jboss.jms.server.destination.QueueService] (main) Queue[/queue/DLQ] started, fullSize=200000, pageSize=2000, downCacheSize=2000
+2026-06-24 15:16:17,299 INFO  [org.jboss.jms.server.destination.QueueService] (main) Queue[/queue/ExpiryQueue] started, fullSize=200000, pageSize=2000, downCacheSize=2000
+2026-06-24 15:16:17,382 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (main) Bound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' to JNDI name 'java:JmsXA'
+2026-06-24 15:16:17,562 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Created KernelDeployment for: jbosscache-core-3.1.0.GA.jar
+2026-06-24 15:16:17,567 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) installing bean: jboss.j2ee:jar=jbosscache-core-3.1.0.GA.jar,name=jbosscache-core-3.1.0.GA,service=EJB3
+2026-06-24 15:16:17,568 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   with dependencies:
+2026-06-24 15:16:17,568 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and demands:
+2026-06-24 15:16:17,568 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and supplies:
+2026-06-24 15:16:17,568 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Added bean(jboss.j2ee:jar=jbosscache-core-3.1.0.GA.jar,name=jbosscache-core-3.1.0.GA,service=EJB3) to KernelDeployment of: jbosscache-core-3.1.0.GA.jar
+2026-06-24 15:16:17,733 INFO  [org.jboss.ejb3.clientmodule.ClientENCInjectionContainer] (main) STARTED CLIENT ENC CONTAINER: jbosscache-core-3.1.0.GA
+2026-06-24 15:16:17,736 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Created KernelDeployment for: jgroups-2.6.10.GA.jar
+2026-06-24 15:16:17,736 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) installing bean: jboss.j2ee:jar=jgroups-2.6.10.GA.jar,name=jgroups-2.6.10.GA,service=EJB3
+2026-06-24 15:16:17,737 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   with dependencies:
+2026-06-24 15:16:17,737 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and demands:
+2026-06-24 15:16:17,737 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and supplies:
+2026-06-24 15:16:17,737 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Added bean(jboss.j2ee:jar=jgroups-2.6.10.GA.jar,name=jgroups-2.6.10.GA,service=EJB3) to KernelDeployment of: jgroups-2.6.10.GA.jar
+2026-06-24 15:16:17,973 INFO  [org.jboss.ejb3.clientmodule.ClientENCInjectionContainer] (main) STARTED CLIENT ENC CONTAINER: jgroups-2.6.10.GA
+2026-06-24 15:16:18,497 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Created KernelDeployment for: profileservice-secured.jar
+2026-06-24 15:16:18,497 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) installing bean: jboss.j2ee:jar=profileservice-secured.jar,name=SecureProfileService,service=EJB3
+2026-06-24 15:16:18,497 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   with dependencies:
+2026-06-24 15:16:18,497 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and demands:
+2026-06-24 15:16:18,497 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jboss.ejb:service=EJBTimerService
+2026-06-24 15:16:18,498 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureManagementView/remote-org.jboss.deployers.spi.management.ManagementView
+2026-06-24 15:16:18,498 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and supplies:
+2026-06-24 15:16:18,500 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureProfileService/remote
+2026-06-24 15:16:18,500 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureProfileService/remote-org.jboss.profileservice.spi.ProfileService
+2026-06-24 15:16:18,500 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	Class:org.jboss.profileservice.spi.ProfileService
+2026-06-24 15:16:18,500 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Added bean(jboss.j2ee:jar=profileservice-secured.jar,name=SecureProfileService,service=EJB3) to KernelDeployment of: profileservice-secured.jar
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) installing bean: jboss.j2ee:jar=profileservice-secured.jar,name=SecureDeploymentManager,service=EJB3
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   with dependencies:
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and demands:
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jboss.ejb:service=EJBTimerService
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and supplies:
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureDeploymentManager/remote-org.jboss.deployers.spi.management.deploy.DeploymentManager
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	Class:org.jboss.deployers.spi.management.deploy.DeploymentManager
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureDeploymentManager/remote
+2026-06-24 15:16:18,501 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Added bean(jboss.j2ee:jar=profileservice-secured.jar,name=SecureDeploymentManager,service=EJB3) to KernelDeployment of: profileservice-secured.jar
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) installing bean: jboss.j2ee:jar=profileservice-secured.jar,name=SecureManagementView,service=EJB3
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   with dependencies:
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and demands:
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jboss.ejb:service=EJBTimerService
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main)   and supplies:
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureManagementView/remote
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	Class:org.jboss.deployers.spi.management.ManagementView
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) 	jndi:SecureManagementView/remote-org.jboss.deployers.spi.management.ManagementView
+2026-06-24 15:16:18,502 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (main) Added bean(jboss.j2ee:jar=profileservice-secured.jar,name=SecureManagementView,service=EJB3) to KernelDeployment of: profileservice-secured.jar
+2026-06-24 15:16:18,511 INFO  [org.jboss.ejb3.endpoint.deployers.EJB3EndpointDeployer] (main) Deploy AbstractBeanMetaData@4754cc37{name=jboss.j2ee:jar=profileservice-secured.jar,name=SecureProfileService,service=EJB3_endpoint bean=org.jboss.ejb3.endpoint.deployers.impl.EndpointImpl properties=[container] constructor=null autowireCandidate=true}
+2026-06-24 15:16:18,511 INFO  [org.jboss.ejb3.endpoint.deployers.EJB3EndpointDeployer] (main) Deploy AbstractBeanMetaData@71a806cd{name=jboss.j2ee:jar=profileservice-secured.jar,name=SecureDeploymentManager,service=EJB3_endpoint bean=org.jboss.ejb3.endpoint.deployers.impl.EndpointImpl properties=[container] constructor=null autowireCandidate=true}
+2026-06-24 15:16:18,512 INFO  [org.jboss.ejb3.endpoint.deployers.EJB3EndpointDeployer] (main) Deploy AbstractBeanMetaData@33fe99fb{name=jboss.j2ee:jar=profileservice-secured.jar,name=SecureManagementView,service=EJB3_endpoint bean=org.jboss.ejb3.endpoint.deployers.impl.EndpointImpl properties=[container] constructor=null autowireCandidate=true}
+2026-06-24 15:16:18,589 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (main) Starting jboss.j2ee:jar=profileservice-secured.jar,name=SecureDeploymentManager,service=EJB3
+2026-06-24 15:16:18,609 INFO  [org.jboss.ejb3.EJBContainer] (main) STARTED EJB: org.jboss.profileservice.ejb.SecureDeploymentManager ejbName: SecureDeploymentManager
+2026-06-24 15:16:18,678 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (main) Binding the following Entries in Global JNDI:
+
+	SecureDeploymentManager/remote - EJB3.x Default Remote Business Interface
+	SecureDeploymentManager/remote-org.jboss.deployers.spi.management.deploy.DeploymentManager - EJB3.x Remote Business Interface
+
+2026-06-24 15:16:18,751 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (main) Starting jboss.j2ee:jar=profileservice-secured.jar,name=SecureManagementView,service=EJB3
+2026-06-24 15:16:18,752 INFO  [org.jboss.ejb3.EJBContainer] (main) STARTED EJB: org.jboss.profileservice.ejb.SecureManagementView ejbName: SecureManagementView
+2026-06-24 15:16:18,767 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (main) Binding the following Entries in Global JNDI:
+
+	SecureManagementView/remote - EJB3.x Default Remote Business Interface
+	SecureManagementView/remote-org.jboss.deployers.spi.management.ManagementView - EJB3.x Remote Business Interface
+
+2026-06-24 15:16:18,806 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (main) Starting jboss.j2ee:jar=profileservice-secured.jar,name=SecureProfileService,service=EJB3
+2026-06-24 15:16:18,808 INFO  [org.jboss.ejb3.EJBContainer] (main) STARTED EJB: org.jboss.profileservice.ejb.SecureProfileServiceBean ejbName: SecureProfileService
+2026-06-24 15:16:18,820 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (main) Binding the following Entries in Global JNDI:
+
+	SecureProfileService/remote - EJB3.x Default Remote Business Interface
+	SecureProfileService/remote-org.jboss.profileservice.spi.ProfileService - EJB3.x Remote Business Interface
+
+2026-06-24 15:16:19,106 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/admin-console
+2026-06-24 15:16:19,213 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (main) Initializing Mojarra (1.2_12-b01-FCS) for context '/admin-console'
+2026-06-24 15:16:21,470 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/
+2026-06-24 15:16:21,524 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/jmx-console
+2026-06-24 15:16:23,497 INFO  [org.mobicents.slee.container.management.jmx.TimerFacilityConfiguration] (main) SLEE Timer facility initiated with 0 for purge period.
+2026-06-24 15:16:23,499 INFO  [org.mobicents.slee.container.management.jmx.TimerFacilityConfiguration] (main) SLEE Timer facility initiated with 4 threads.
+2026-06-24 15:16:23,702 INFO  [org.mobicents.slee.container.congestion.CongestionControlImpl] (main) Mobicents SLEE Congestion Control is OFF. Configuration: periodBetweenChecks = 0, minFreeMemoryToTurnOn = 10%, minFreeMemoryToTurnOff = 20%, refuseStartActivity = true, refuseFireEvent = false
+2026-06-24 15:16:23,936 INFO  [org.mobicents.slee.container.management.jmx.ProfileProvisioningMBeanImpl] (main) ProfileProvisioningMBean has been started
+2026-06-24 15:16:24,004 INFO  [org.mobicents.slee.container.management.jmx.ActivityManagementMBeanImpl] (main) Activity Management MBean started
+2026-06-24 15:16:24,031 INFO  [javax.slee.management.SleeManagementMBean] (main)  ## ## ## ## ## ## ## Restcomm JAIN SLEE 2.8.36 "???" init ## ## ## ## ## ## ## 
+2026-06-24 15:16:24,067 INFO  [org.mobicents.slee.container.eventrouter.EventRouter] (main) Mobicents JAIN SLEE Event Router started.
+2026-06-24 15:16:24,263 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installing DeployableUnitID[url=file:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/restcomm-slee/standard-components-du.jar/]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.facilities.TimerEvent,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.ActivityEndEvent,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.profile.ProfileAddedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.profile.ProfileUpdatedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.profile.ProfileRemovedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.serviceactivity.ServiceStartedEvent,vendor=javax.slee,version=1.1]
+2026-06-24 15:16:24,459 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed EventTypeID[name=javax.slee.serviceactivity.ServiceStartedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:24,850 INFO  [org.hibernate.cfg.annotations.Version] (SLEE-InternalDeployer-thread-1) Hibernate Annotations 3.4.0.GA
+2026-06-24 15:16:24,974 INFO  [org.hibernate.cfg.Environment] (SLEE-InternalDeployer-thread-1) Hibernate 3.3.1.GA
+2026-06-24 15:16:24,988 INFO  [org.hibernate.cfg.Environment] (SLEE-InternalDeployer-thread-1) hibernate.properties not found
+2026-06-24 15:16:25,000 INFO  [org.hibernate.cfg.Environment] (SLEE-InternalDeployer-thread-1) Bytecode provider name : javassist
+2026-06-24 15:16:25,016 INFO  [org.hibernate.cfg.Environment] (SLEE-InternalDeployer-thread-1) using JDK 1.4 java.sql.Timestamp handling
+2026-06-24 15:16:25,292 INFO  [org.hibernate.annotations.common.Version] (SLEE-InternalDeployer-thread-1) Hibernate Commons Annotations 3.1.0.GA
+2026-06-24 15:16:25,302 INFO  [org.hibernate.ejb.Version] (SLEE-InternalDeployer-thread-1) Hibernate EntityManager 3.4.0.GA
+2026-06-24 15:16:25,428 INFO  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Processing PersistenceUnitInfo [
+	name: JSLEEProfiles1974387886
+	...]
+2026-06-24 15:16:25,431 ERROR [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Container is providing a null PersistenceUnitRootUrl: discovery impossible
+2026-06-24 15:16:25,435 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Persistence provider caller does not implement the EJB3 spec correctly. PersistenceUnitInfo.getNewTempClassLoader() is null.
+2026-06-24 15:16:25,441 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2026-06-24 15:16:25,658 INFO  [org.hibernate.cfg.AnnotationBinder] (SLEE-InternalDeployer-thread-1) Binding entity from annotated class: javax.slee.profile.ResourceInfoProfileCMP_PE
+2026-06-24 15:16:25,790 INFO  [org.hibernate.cfg.annotations.EntityBinder] (SLEE-InternalDeployer-thread-1) Bind entity javax.slee.profile.ResourceInfoProfileCMP_PE on table SLEE_PE_ResourceInfoProfileCMP_1974387886
+2026-06-24 15:16:25,982 INFO  [org.hibernate.validator.Version] (SLEE-InternalDeployer-thread-1) Hibernate Validator 3.1.0.GA
+2026-06-24 15:16:26,052 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (SLEE-InternalDeployer-thread-1) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2026-06-24 15:16:26,272 INFO  [org.hibernate.connection.ConnectionProviderFactory] (SLEE-InternalDeployer-thread-1) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2026-06-24 15:16:26,280 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (SLEE-InternalDeployer-thread-1) Using provided datasource
+2026-06-24 15:16:26,294 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) RDBMS: HSQL Database Engine, version: 1.8.0
+2026-06-24 15:16:26,294 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+2026-06-24 15:16:26,332 INFO  [org.hibernate.dialect.Dialect] (SLEE-InternalDeployer-thread-1) Using dialect: org.hibernate.dialect.HSQLDialect
+2026-06-24 15:16:26,344 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (SLEE-InternalDeployer-thread-1) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2026-06-24 15:16:26,352 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2026-06-24 15:16:26,356 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiated TransactionManagerLookup
+2026-06-24 15:16:26,356 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic flush during beforeCompletion(): disabled
+2026-06-24 15:16:26,356 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic session close at end of transaction: disabled
+2026-06-24 15:16:26,359 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Scrollable result sets: enabled
+2026-06-24 15:16:26,359 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC3 getGeneratedKeys(): disabled
+2026-06-24 15:16:26,359 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Connection release mode: auto
+2026-06-24 15:16:26,362 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default batch fetch size: 1
+2026-06-24 15:16:26,362 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Generate SQL with comments: disabled
+2026-06-24 15:16:26,362 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL updates by primary key: disabled
+2026-06-24 15:16:26,363 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL inserts for batching: disabled
+2026-06-24 15:16:26,363 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2026-06-24 15:16:26,374 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (SLEE-InternalDeployer-thread-1) Using ASTQueryTranslatorFactory
+2026-06-24 15:16:26,374 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query language substitutions: {}
+2026-06-24 15:16:26,374 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JPA-QL strict compliance: enabled
+2026-06-24 15:16:26,374 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Second-level cache: enabled
+2026-06-24 15:16:26,375 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query cache: disabled
+2026-06-24 15:16:26,390 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2026-06-24 15:16:26,391 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (SLEE-InternalDeployer-thread-1) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2026-06-24 15:16:26,396 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Optimize cache for minimal puts: disabled
+2026-06-24 15:16:26,397 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region prefix: persistence.unit:unitName=#JSLEEProfiles1974387886
+2026-06-24 15:16:26,397 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Structured second-level cache entries: disabled
+2026-06-24 15:16:26,413 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Statistics: disabled
+2026-06-24 15:16:26,414 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Deleted entity synthetic identifier rollback: disabled
+2026-06-24 15:16:26,414 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default entity-mode: pojo
+2026-06-24 15:16:26,414 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Named query checking : enabled
+2026-06-24 15:16:26,569 INFO  [org.hibernate.impl.SessionFactoryImpl] (SLEE-InternalDeployer-thread-1) building session factory
+2026-06-24 15:16:27,018 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Factory name: persistence.unit:unitName=#JSLEEProfiles1974387886
+2026-06-24 15:16:27,022 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:27,025 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Bound factory to JNDI name: persistence.unit:unitName=#JSLEEProfiles1974387886
+2026-06-24 15:16:27,025 WARN  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) InitialContext did not implement EventContext
+2026-06-24 15:16:27,044 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) Running hbm2ddl schema update
+2026-06-24 15:16:27,045 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) fetching database metadata
+2026-06-24 15:16:27,049 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) updating schema
+2026-06-24 15:16:27,100 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) table found: PUBLIC.SLEE_PE_RESOURCEINFOPROFILECMP_1974387886
+2026-06-24 15:16:27,100 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) columns: [cinfo, profilename, tablename]
+2026-06-24 15:16:27,100 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) foreign keys: []
+2026-06-24 15:16:27,101 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) indexes: [sys_idx_66]
+2026-06-24 15:16:27,101 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) schema update complete
+2026-06-24 15:16:27,105 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:27,188 INFO  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Processing PersistenceUnitInfo [
+	name: restcomm-profile-persistence-pu
+	...]
+2026-06-24 15:16:27,188 ERROR [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Container is providing a null PersistenceUnitRootUrl: discovery impossible
+2026-06-24 15:16:27,190 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Persistence provider caller does not implement the EJB3 spec correctly. PersistenceUnitInfo.getNewTempClassLoader() is null.
+2026-06-24 15:16:27,190 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2026-06-24 15:16:27,197 INFO  [org.hibernate.cfg.AnnotationBinder] (SLEE-InternalDeployer-thread-1) Binding entity from annotated class: org.mobicents.slee.container.deployment.profile.jpa.JPAProfileTable
+2026-06-24 15:16:27,201 INFO  [org.hibernate.cfg.annotations.QueryBinder] (SLEE-InternalDeployer-thread-1) Binding Named query: SLEE_PROFILES_QUERY_selectAllTables => SELECT x FROM JPAProfileTable x
+2026-06-24 15:16:27,201 INFO  [org.hibernate.cfg.annotations.QueryBinder] (SLEE-InternalDeployer-thread-1) Binding Named query: SLEE_PROFILES_QUERY_findTableByName => SELECT x FROM JPAProfileTable x WHERE x.profileTableName = :profileTableName
+2026-06-24 15:16:27,201 INFO  [org.hibernate.cfg.annotations.QueryBinder] (SLEE-InternalDeployer-thread-1) Binding Named query: SLEE_PROFILES_QUERY_renameTable => UPDATE JPAProfileTable x SET x.profileTableName = :newProfileTableName WHERE x.profileTableName = :oldProfileTableName
+2026-06-24 15:16:27,202 INFO  [org.hibernate.cfg.annotations.QueryBinder] (SLEE-InternalDeployer-thread-1) Binding Named query: SLEE_PROFILES_QUERY_deleteTable => DELETE FROM JPAProfileTable x WHERE x.profileTableName = :profileTableName
+2026-06-24 15:16:27,202 INFO  [org.hibernate.cfg.annotations.QueryBinder] (SLEE-InternalDeployer-thread-1) Binding Named query: SLEE_PROFILES_QUERY_selectTablesByProfileSpecID => SELECT x FROM JPAProfileTable x WHERE x.profileSpecId = :profileSpecId
+2026-06-24 15:16:27,202 INFO  [org.hibernate.cfg.annotations.EntityBinder] (SLEE-InternalDeployer-thread-1) Bind entity org.mobicents.slee.container.deployment.profile.jpa.JPAProfileTable on table JAINSLEEPROFILETABLES
+2026-06-24 15:16:27,218 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (SLEE-InternalDeployer-thread-1) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2026-06-24 15:16:27,229 INFO  [org.hibernate.connection.ConnectionProviderFactory] (SLEE-InternalDeployer-thread-1) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2026-06-24 15:16:27,230 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (SLEE-InternalDeployer-thread-1) Using provided datasource
+2026-06-24 15:16:27,231 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) RDBMS: HSQL Database Engine, version: 1.8.0
+2026-06-24 15:16:27,231 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+2026-06-24 15:16:27,231 INFO  [org.hibernate.dialect.Dialect] (SLEE-InternalDeployer-thread-1) Using dialect: org.hibernate.dialect.HSQLDialect
+2026-06-24 15:16:27,232 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (SLEE-InternalDeployer-thread-1) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2026-06-24 15:16:27,232 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2026-06-24 15:16:27,232 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiated TransactionManagerLookup
+2026-06-24 15:16:27,232 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic flush during beforeCompletion(): disabled
+2026-06-24 15:16:27,232 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic session close at end of transaction: disabled
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Scrollable result sets: enabled
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC3 getGeneratedKeys(): disabled
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Connection release mode: auto
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default batch fetch size: 1
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Generate SQL with comments: disabled
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL updates by primary key: disabled
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL inserts for batching: disabled
+2026-06-24 15:16:27,233 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2026-06-24 15:16:27,234 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (SLEE-InternalDeployer-thread-1) Using ASTQueryTranslatorFactory
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query language substitutions: {}
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JPA-QL strict compliance: enabled
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Second-level cache: enabled
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query cache: disabled
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (SLEE-InternalDeployer-thread-1) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Optimize cache for minimal puts: disabled
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region prefix: persistence.unit:unitName=#restcomm-profile-persistence-pu
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Structured second-level cache entries: disabled
+2026-06-24 15:16:27,234 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Statistics: disabled
+2026-06-24 15:16:27,235 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Deleted entity synthetic identifier rollback: disabled
+2026-06-24 15:16:27,235 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default entity-mode: pojo
+2026-06-24 15:16:27,235 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Named query checking : enabled
+2026-06-24 15:16:27,249 INFO  [org.hibernate.impl.SessionFactoryImpl] (SLEE-InternalDeployer-thread-1) building session factory
+2026-06-24 15:16:27,270 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Factory name: persistence.unit:unitName=#restcomm-profile-persistence-pu
+2026-06-24 15:16:27,270 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:27,270 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Bound factory to JNDI name: persistence.unit:unitName=#restcomm-profile-persistence-pu
+2026-06-24 15:16:27,271 WARN  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) InitialContext did not implement EventContext
+2026-06-24 15:16:27,271 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) Running hbm2ddl schema update
+2026-06-24 15:16:27,271 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) fetching database metadata
+2026-06-24 15:16:27,272 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) updating schema
+2026-06-24 15:16:27,307 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) table found: PUBLIC.JAINSLEEPROFILETABLES
+2026-06-24 15:16:27,307 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) columns: [profilespecid, profiletablename]
+2026-06-24 15:16:27,307 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) foreign keys: []
+2026-06-24 15:16:27,308 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) indexes: [sys_idx_68]
+2026-06-24 15:16:27,308 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) schema update complete
+2026-06-24 15:16:27,308 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:27,856 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed ProfileSpecificationID[name=ResourceInfoProfileSpec,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:27,911 INFO  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Processing PersistenceUnitInfo [
+	name: JSLEEProfiles152456043
+	...]
+2026-06-24 15:16:27,911 ERROR [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Container is providing a null PersistenceUnitRootUrl: discovery impossible
+2026-06-24 15:16:27,911 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Persistence provider caller does not implement the EJB3 spec correctly. PersistenceUnitInfo.getNewTempClassLoader() is null.
+2026-06-24 15:16:27,912 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2026-06-24 15:16:27,914 INFO  [org.hibernate.cfg.AnnotationBinder] (SLEE-InternalDeployer-thread-1) Binding entity from annotated class: javax.slee.profile.AddressProfile11CMP_PE
+2026-06-24 15:16:27,914 INFO  [org.hibernate.cfg.annotations.EntityBinder] (SLEE-InternalDeployer-thread-1) Bind entity javax.slee.profile.AddressProfile11CMP_PE on table SLEE_PE_AddressProfile11CMP_152456043
+2026-06-24 15:16:27,927 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (SLEE-InternalDeployer-thread-1) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2026-06-24 15:16:27,929 INFO  [org.hibernate.connection.ConnectionProviderFactory] (SLEE-InternalDeployer-thread-1) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2026-06-24 15:16:27,929 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (SLEE-InternalDeployer-thread-1) Using provided datasource
+2026-06-24 15:16:27,931 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) RDBMS: HSQL Database Engine, version: 1.8.0
+2026-06-24 15:16:27,931 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+2026-06-24 15:16:27,932 INFO  [org.hibernate.dialect.Dialect] (SLEE-InternalDeployer-thread-1) Using dialect: org.hibernate.dialect.HSQLDialect
+2026-06-24 15:16:27,933 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (SLEE-InternalDeployer-thread-1) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2026-06-24 15:16:27,933 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2026-06-24 15:16:27,933 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiated TransactionManagerLookup
+2026-06-24 15:16:27,933 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic flush during beforeCompletion(): disabled
+2026-06-24 15:16:27,933 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic session close at end of transaction: disabled
+2026-06-24 15:16:27,933 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Scrollable result sets: enabled
+2026-06-24 15:16:27,933 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC3 getGeneratedKeys(): disabled
+2026-06-24 15:16:27,933 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Connection release mode: auto
+2026-06-24 15:16:27,933 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default batch fetch size: 1
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Generate SQL with comments: disabled
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL updates by primary key: disabled
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL inserts for batching: disabled
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2026-06-24 15:16:27,934 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (SLEE-InternalDeployer-thread-1) Using ASTQueryTranslatorFactory
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query language substitutions: {}
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JPA-QL strict compliance: enabled
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Second-level cache: enabled
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query cache: disabled
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2026-06-24 15:16:27,934 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (SLEE-InternalDeployer-thread-1) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Optimize cache for minimal puts: disabled
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region prefix: persistence.unit:unitName=#JSLEEProfiles152456043
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Structured second-level cache entries: disabled
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Statistics: disabled
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Deleted entity synthetic identifier rollback: disabled
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default entity-mode: pojo
+2026-06-24 15:16:27,935 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Named query checking : enabled
+2026-06-24 15:16:27,940 INFO  [org.hibernate.impl.SessionFactoryImpl] (SLEE-InternalDeployer-thread-1) building session factory
+2026-06-24 15:16:27,947 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Factory name: persistence.unit:unitName=#JSLEEProfiles152456043
+2026-06-24 15:16:27,947 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:27,951 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Bound factory to JNDI name: persistence.unit:unitName=#JSLEEProfiles152456043
+2026-06-24 15:16:27,951 WARN  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) InitialContext did not implement EventContext
+2026-06-24 15:16:27,951 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) Running hbm2ddl schema update
+2026-06-24 15:16:27,951 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) fetching database metadata
+2026-06-24 15:16:27,952 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) updating schema
+2026-06-24 15:16:27,964 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) table found: PUBLIC.SLEE_PE_ADDRESSPROFILE11CMP_152456043
+2026-06-24 15:16:27,965 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) columns: [profilename, caddress, tablename]
+2026-06-24 15:16:27,965 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) foreign keys: []
+2026-06-24 15:16:27,965 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) indexes: [sys_idx_sys_ct_71_74, sys_idx_72]
+2026-06-24 15:16:27,965 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) schema update complete
+2026-06-24 15:16:27,965 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:27,993 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed ProfileSpecificationID[name=AddressProfileSpec,vendor=javax.slee,version=1.1]
+2026-06-24 15:16:28,086 INFO  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Processing PersistenceUnitInfo [
+	name: JSLEEProfiles167136107
+	...]
+2026-06-24 15:16:28,086 ERROR [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Container is providing a null PersistenceUnitRootUrl: discovery impossible
+2026-06-24 15:16:28,086 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Persistence provider caller does not implement the EJB3 spec correctly. PersistenceUnitInfo.getNewTempClassLoader() is null.
+2026-06-24 15:16:28,087 WARN  [org.hibernate.ejb.Ejb3Configuration] (SLEE-InternalDeployer-thread-1) Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2026-06-24 15:16:28,088 INFO  [org.hibernate.cfg.AnnotationBinder] (SLEE-InternalDeployer-thread-1) Binding entity from annotated class: javax.slee.profile.AddressProfileCMPPEAAV_Addresses
+2026-06-24 15:16:28,088 INFO  [org.hibernate.cfg.annotations.EntityBinder] (SLEE-InternalDeployer-thread-1) Bind entity javax.slee.profile.AddressProfileCMPPEAAV_Addresses on table SLEE_PEAAV_AddressProfileCMP_167136107addresses
+2026-06-24 15:16:28,119 INFO  [org.hibernate.cfg.AnnotationBinder] (SLEE-InternalDeployer-thread-1) Binding entity from annotated class: javax.slee.profile.AddressProfileCMP_PE
+2026-06-24 15:16:28,120 INFO  [org.hibernate.cfg.annotations.EntityBinder] (SLEE-InternalDeployer-thread-1) Bind entity javax.slee.profile.AddressProfileCMP_PE on table SLEE_PE_AddressProfileCMP_167136107
+2026-06-24 15:16:28,171 INFO  [org.hibernate.cfg.annotations.CollectionBinder] (SLEE-InternalDeployer-thread-1) Mapping collection: javax.slee.profile.AddressProfileCMP_PE.caddresses -> SLEE_PEAAV_AddressProfileCMP_167136107addresses
+2026-06-24 15:16:28,187 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (SLEE-InternalDeployer-thread-1) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2026-06-24 15:16:28,190 INFO  [org.hibernate.connection.ConnectionProviderFactory] (SLEE-InternalDeployer-thread-1) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2026-06-24 15:16:28,190 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (SLEE-InternalDeployer-thread-1) Using provided datasource
+2026-06-24 15:16:28,191 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) RDBMS: HSQL Database Engine, version: 1.8.0
+2026-06-24 15:16:28,191 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+2026-06-24 15:16:28,191 INFO  [org.hibernate.dialect.Dialect] (SLEE-InternalDeployer-thread-1) Using dialect: org.hibernate.dialect.HSQLDialect
+2026-06-24 15:16:28,192 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (SLEE-InternalDeployer-thread-1) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2026-06-24 15:16:28,192 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2026-06-24 15:16:28,192 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (SLEE-InternalDeployer-thread-1) instantiated TransactionManagerLookup
+2026-06-24 15:16:28,192 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic flush during beforeCompletion(): disabled
+2026-06-24 15:16:28,192 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Automatic session close at end of transaction: disabled
+2026-06-24 15:16:28,192 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Scrollable result sets: enabled
+2026-06-24 15:16:28,192 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JDBC3 getGeneratedKeys(): disabled
+2026-06-24 15:16:28,192 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Connection release mode: auto
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default batch fetch size: 1
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Generate SQL with comments: disabled
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL updates by primary key: disabled
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Order SQL inserts for batching: disabled
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2026-06-24 15:16:28,193 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (SLEE-InternalDeployer-thread-1) Using ASTQueryTranslatorFactory
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query language substitutions: {}
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) JPA-QL strict compliance: enabled
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Second-level cache: enabled
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Query cache: disabled
+2026-06-24 15:16:28,193 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (SLEE-InternalDeployer-thread-1) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Optimize cache for minimal puts: disabled
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Cache region prefix: persistence.unit:unitName=#JSLEEProfiles167136107
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Structured second-level cache entries: disabled
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Statistics: disabled
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Deleted entity synthetic identifier rollback: disabled
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Default entity-mode: pojo
+2026-06-24 15:16:28,194 INFO  [org.hibernate.cfg.SettingsFactory] (SLEE-InternalDeployer-thread-1) Named query checking : enabled
+2026-06-24 15:16:28,198 INFO  [org.hibernate.impl.SessionFactoryImpl] (SLEE-InternalDeployer-thread-1) building session factory
+2026-06-24 15:16:28,250 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Factory name: persistence.unit:unitName=#JSLEEProfiles167136107
+2026-06-24 15:16:28,250 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:28,252 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) Bound factory to JNDI name: persistence.unit:unitName=#JSLEEProfiles167136107
+2026-06-24 15:16:28,252 WARN  [org.hibernate.impl.SessionFactoryObjectFactory] (SLEE-InternalDeployer-thread-1) InitialContext did not implement EventContext
+2026-06-24 15:16:28,252 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) Running hbm2ddl schema update
+2026-06-24 15:16:28,253 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) fetching database metadata
+2026-06-24 15:16:28,253 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) updating schema
+2026-06-24 15:16:28,266 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) table found: PUBLIC.SLEE_PEAAV_ADDRESSPROFILECMP_167136107ADDRESSES
+2026-06-24 15:16:28,266 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) columns: [owner_tablename, string, id, serializable, owner_profilename]
+2026-06-24 15:16:28,266 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) foreign keys: [fkc2cf5bded03dfefa]
+2026-06-24 15:16:28,266 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) indexes: [sys_idx_76, sys_idx_sys_ct_75_78, sys_idx_81]
+2026-06-24 15:16:28,272 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) table found: PUBLIC.SLEE_PE_ADDRESSPROFILECMP_167136107
+2026-06-24 15:16:28,272 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) columns: [profilename, tablename]
+2026-06-24 15:16:28,272 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) foreign keys: []
+2026-06-24 15:16:28,272 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (SLEE-InternalDeployer-thread-1) indexes: [sys_idx_79]
+2026-06-24 15:16:28,272 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (SLEE-InternalDeployer-thread-1) schema update complete
+2026-06-24 15:16:28,273 INFO  [org.hibernate.util.NamingHelper] (SLEE-InternalDeployer-thread-1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 15:16:28,295 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed ProfileSpecificationID[name=AddressProfileSpec,vendor=javax.slee,version=1.0]
+2026-06-24 15:16:28,295 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (SLEE-InternalDeployer-thread-1) Installed DeployableUnitID[url=file:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/restcomm-slee/standard-components-du.jar/]
+2026-06-24 15:16:28,556 INFO  [org.mobicents.cache.MobicentsCache] (main) Starting JBoss Cache...
+2026-06-24 15:16:28,586 INFO  [org.jboss.cache.factories.ComponentRegistry] (main) JBoss Cache version: JBossCache 'Cascabel' 3.1.0.GA
+2026-06-24 15:16:28,587 INFO  [org.mobicents.cache.MobicentsCache] (main) Mobicents Cache started, status: STARTED, Mode: LOCAL
+2026-06-24 15:16:28,635 INFO  [javax.slee.management.SleeManagementMBean] (main)  ## ## ## ## ## ## ## Restcomm JAIN SLEE 2.8.36 "???" started ## ## ## ## ## ## ## 
+2026-06-24 15:16:28,784 INFO  [org.apache.coyote.http11.Http11Protocol] (main) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2026-06-24 15:16:28,817 INFO  [org.apache.coyote.ajp.AjpProtocol] (main) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2026-06-24 15:16:28,832 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (main) JBoss (Microcontainer) [5.1.0.GA (build: SVNTag=JBoss_5_1_0_GA date=200905221053)] Started in 1m:11s:368ms
+2026-06-24 15:16:56,666 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (RMI TCP Connection(4)-127.0.0.1) Installing DeployableUnitID[url=file:/tmp/trustcall-slee-du.jar]
+2026-06-24 15:29:24,506 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (RMI TCP Connection(8)-127.0.0.1) Installing DeployableUnitID[url=file:/tmp/trustcall-slee-du-clean.jar]
+2026-06-24 17:20:18,986 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (JBoss Shutdown Hook) Runtime shutdown hook called, forceHalt: true
+2026-06-24 17:20:19,022 INFO  [org.apache.coyote.http11.Http11Protocol] (JBoss Shutdown Hook) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2026-06-24 17:20:19,089 INFO  [org.apache.coyote.http11.Http11Protocol] (JBoss Shutdown Hook) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2026-06-24 17:20:19,116 INFO  [org.apache.coyote.ajp.AjpProtocol] (JBoss Shutdown Hook) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2026-06-24 17:20:19,119 INFO  [org.apache.coyote.ajp.AjpProtocol] (JBoss Shutdown Hook) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2026-06-24 17:20:19,486 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (JBoss Shutdown Hook) org.jboss.jms.server.connectionfactory.ConnectionFactory@34c060c7 undeployed
+2026-06-24 17:20:19,586 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (JBoss Shutdown Hook) org.jboss.jms.server.connectionfactory.ConnectionFactory@3905d9ac undeployed
+2026-06-24 17:20:19,590 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (JBoss Shutdown Hook) org.jboss.jms.server.connectionfactory.ConnectionFactory@72900dbe undeployed
+2026-06-24 17:20:19,637 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/web-console
+2026-06-24 17:20:19,912 INFO  [org.jboss.jms.server.destination.QueueService] (JBoss Shutdown Hook) Queue[/queue/ExpiryQueue] stopped
+2026-06-24 17:20:19,922 INFO  [org.jboss.jms.server.destination.QueueService] (JBoss Shutdown Hook) Queue[/queue/DLQ] stopped
+2026-06-24 17:20:20,037 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (JBoss Shutdown Hook) Stopping jboss.j2ee:jar=profileservice-secured.jar,name=SecureProfileService,service=EJB3
+2026-06-24 17:20:20,212 INFO  [org.jboss.ejb3.EJBContainer] (JBoss Shutdown Hook) STOPPED EJB: org.jboss.profileservice.ejb.SecureProfileServiceBean ejbName: SecureProfileService
+2026-06-24 17:20:20,305 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (JBoss Shutdown Hook) Stopping jboss.j2ee:jar=profileservice-secured.jar,name=SecureDeploymentManager,service=EJB3
+2026-06-24 17:20:20,328 INFO  [org.jboss.ejb3.EJBContainer] (JBoss Shutdown Hook) STOPPED EJB: org.jboss.profileservice.ejb.SecureDeploymentManager ejbName: SecureDeploymentManager
+2026-06-24 17:20:20,388 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (JBoss Shutdown Hook) Stopping jboss.j2ee:jar=profileservice-secured.jar,name=SecureManagementView,service=EJB3
+2026-06-24 17:20:20,400 INFO  [org.jboss.ejb3.EJBContainer] (JBoss Shutdown Hook) STOPPED EJB: org.jboss.profileservice.ejb.SecureManagementView ejbName: SecureManagementView
+2026-06-24 17:20:20,435 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (JBoss Shutdown Hook) Unbound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' from JNDI name 'java:JmsXA'
+2026-06-24 17:20:20,711 INFO  [org.jboss.jms.server.ServerPeer] (JBoss Shutdown Hook) JMS ServerPeer[0] stopped
+2026-06-24 17:20:20,759 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/invoker
+2026-06-24 17:20:21,014 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/jbossws
+2026-06-24 17:20:21,021 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/admin-console
+2026-06-24 17:20:21,050 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/
+2026-06-24 17:20:21,057 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/jmx-console
+2026-06-24 17:20:21,069 INFO  [org.apache.catalina.core.StandardService] (JBoss Shutdown Hook) Stopping service jboss.web
+2026-06-24 17:20:21,229 INFO  [org.jboss.mail.MailService] (JBoss Shutdown Hook) Mail service 'java:/Mail' removed from JNDI
+2026-06-24 17:20:21,479 INFO  [javax.slee.management.SleeManagementMBean] (JBoss Shutdown Hook)  ## ## ## ## ## ## ## Restcomm JAIN SLEE 2.8.36 "???" stopping ## ## ## ## ## ## ## 
+2026-06-24 17:20:21,483 INFO  [org.mobicents.slee.container.management.ServiceManagementImpl] (JBoss Shutdown Hook) Ending all service activities...
+2026-06-24 17:20:21,484 INFO  [org.mobicents.slee.container.management.ServiceManagementImpl] (JBoss Shutdown Hook) All service activities ended.
+2026-06-24 17:20:21,485 INFO  [org.mobicents.slee.container.management.ProfileManagementImpl] (JBoss Shutdown Hook) Ending all profile table activities...
+2026-06-24 17:20:21,487 INFO  [org.mobicents.slee.container.management.ResourceManagement] (JBoss Shutdown Hook) Stopping all active resource adaptors ...
+2026-06-24 17:20:21,495 INFO  [javax.slee.management.SleeManagementMBean] (JBoss Shutdown Hook)  ## ## ## ## ## ## ## Restcomm JAIN SLEE 2.8.36 "???" stopped ## ## ## ## ## ## ## 
+2026-06-24 17:20:21,560 INFO  [org.mobicents.slee.container.SleeContainer] (JBoss Shutdown Hook) org.mobicents.slee.container.component.ComponentManagementImpl@18266e78
+Resource Management: 
++-- Resource Adaptor Entities: []
++-- Resource Adaptor Entity Links: []
++-- Resource Adaptor Entities per RA Type size: 0
++-- Activity Handle Reference Factory: null
+Timer Facility: 
++-- FaultTolerantScheduler [ name = timer-facility , local tasks = 0 , all tasks 0 ]
+Trace MBean Impl : 
++-- Tracers: {}
+Profile Table Manager: 
++-- Profile Tables: []
+ActivityContext Factory: 
++-- Local ACs: []
++-- ACs: []
+Activity context Naming Facility: 
++-- Names: []
+org.mobicents.slee.runtime.facilities.nullactivity.NullActivityFactoryImpl@4c569cca
+EventRouter: 
++-- Executors: 8
+EventContextFactoryImpl[ datasource = DefaultEventContextFactoryDataSource[ [] ] ]
+org.mobicents.slee.runtime.transaction.SleeTransactionManagerImpl@203d5fbd
+Mobicents Cache: 
++-- Content:
+/  null
+  /ac  null
+  /timer-facility  null
+  /sbbe  null
+  /aci-names  null
+
+2026-06-24 17:20:21,560 INFO  [javax.slee.management.SleeManagementMBean] (JBoss Shutdown Hook)  ## ## ## ## ## ## ## Restcomm JAIN SLEE 2.8.36 "???" shutdown ## ## ## ## ## ## ## 
+2026-06-24 17:20:21,561 INFO  [org.mobicents.cache.MobicentsCache] (JBoss Shutdown Hook) Mobicents Cache stopping...
+2026-06-24 17:20:21,565 INFO  [org.mobicents.cache.MobicentsCache] (JBoss Shutdown Hook) Mobicents Cache stopped.
+2026-06-24 17:20:21,566 INFO  [org.mobicents.slee.container.deployment.jboss.DeploymentManager] (JBoss Shutdown Hook) Undeploying all Deployable Units due to SLEE shutdown
+2026-06-24 17:20:21,578 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalling DeployableUnitID[url=file:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/restcomm-slee/standard-components-du.jar/]
+2026-06-24 17:20:21,597 INFO  [org.hibernate.impl.SessionFactoryImpl] (JBoss Shutdown Hook) closing
+2026-06-24 17:20:21,599 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (JBoss Shutdown Hook) Unbinding factory from JNDI name: persistence.unit:unitName=#JSLEEProfiles1974387886
+2026-06-24 17:20:21,599 INFO  [org.hibernate.util.NamingHelper] (JBoss Shutdown Hook) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 17:20:21,600 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (JBoss Shutdown Hook) Unbound factory from JNDI name: persistence.unit:unitName=#JSLEEProfiles1974387886
+2026-06-24 17:20:21,636 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled ProfileSpecificationID[name=ResourceInfoProfileSpec,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,639 INFO  [org.hibernate.impl.SessionFactoryImpl] (JBoss Shutdown Hook) closing
+2026-06-24 17:20:21,639 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (JBoss Shutdown Hook) Unbinding factory from JNDI name: persistence.unit:unitName=#JSLEEProfiles152456043
+2026-06-24 17:20:21,640 INFO  [org.hibernate.util.NamingHelper] (JBoss Shutdown Hook) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 17:20:21,640 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (JBoss Shutdown Hook) Unbound factory from JNDI name: persistence.unit:unitName=#JSLEEProfiles152456043
+2026-06-24 17:20:21,640 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled ProfileSpecificationID[name=AddressProfileSpec,vendor=javax.slee,version=1.1]
+2026-06-24 17:20:21,643 INFO  [org.hibernate.impl.SessionFactoryImpl] (JBoss Shutdown Hook) closing
+2026-06-24 17:20:21,644 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (JBoss Shutdown Hook) Unbinding factory from JNDI name: persistence.unit:unitName=#JSLEEProfiles167136107
+2026-06-24 17:20:21,644 INFO  [org.hibernate.util.NamingHelper] (JBoss Shutdown Hook) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2026-06-24 17:20:21,644 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (JBoss Shutdown Hook) Unbound factory from JNDI name: persistence.unit:unitName=#JSLEEProfiles167136107
+2026-06-24 17:20:21,645 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled ProfileSpecificationID[name=AddressProfileSpec,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,648 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.facilities.TimerEvent,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,648 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.ActivityEndEvent,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,648 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.profile.ProfileAddedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,648 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.profile.ProfileUpdatedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,649 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.profile.ProfileRemovedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,649 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.serviceactivity.ServiceStartedEvent,vendor=javax.slee,version=1.1]
+2026-06-24 17:20:21,655 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled EventTypeID[name=javax.slee.serviceactivity.ServiceStartedEvent,vendor=javax.slee,version=1.0]
+2026-06-24 17:20:21,655 INFO  [org.mobicents.slee.container.management.jmx.DeploymentMBeanImpl] (JBoss Shutdown Hook) Uninstalled DeployableUnitID[url=file:/home/inter-tech/cef-612-trust-call/restcomm/jboss-5.1.0.GA-clean/server/default/deploy/restcomm-slee/standard-components-du.jar/]
+2026-06-24 17:20:22,009 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (JBoss Shutdown Hook) Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' from JNDI name 'java:DefaultDS'
+2026-06-24 17:20:22,125 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2026-06-24 17:20:22,125 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2026-06-24 17:20:22,164 INFO  [org.quartz.simpl.SimpleThreadPool] (JBoss Shutdown Hook) There are still 31 worker threads active. See javadoc runInThread(Runnable) for a possible explanation
+2026-06-24 17:20:22,165 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-06-24 17:20:22,918 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (JBoss Shutdown Hook) Stopping transaction recovery manager
+2026-06-24 17:20:22,934 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (JBoss Shutdown Hook) Destroying TransactionManagerService
+2026-06-24 17:20:23,270 INFO  [org.jboss.jdbc.HypersonicDatabase] (JBoss Shutdown Hook) Database standalone closed clean
+2026-06-24 17:20:23,322 INFO  [org.jboss.ejb3.clientmodule.ClientENCInjectionContainer] (JBoss Shutdown Hook) STOPPED CLIENT ENC CONTAINER: jbosscache-core-3.1.0.GA
+2026-06-24 17:20:23,349 INFO  [org.jboss.ejb3.clientmodule.ClientENCInjectionContainer] (JBoss Shutdown Hook) STOPPED CLIENT ENC CONTAINER: jgroups-2.6.10.GA
+2026-06-24 17:20:30,217 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (JBoss Shutdown Hook) Shutdown complete

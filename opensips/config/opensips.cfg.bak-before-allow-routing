@@ -1,0 +1,69 @@
+log_level=3
+xlog_level=3
+
+mpath="/usr/lib/x86_64-linux-gnu/opensips/modules/"
+
+socket=udp:172.25.57.39:5060
+
+loadmodule "proto_udp.so"
+loadmodule "sl.so"
+loadmodule "tm.so"
+loadmodule "rr.so"
+loadmodule "maxfwd.so"
+loadmodule "sipmsgops.so"
+loadmodule "textops.so"
+loadmodule "usrloc.so"
+loadmodule "signaling.so"
+loadmodule "registrar.so"
+loadmodule "rest_client.so"
+
+modparam("usrloc", "working_mode_preset", "single-instance-no-db")
+
+route {
+
+    xlog("L_INFO", "[$rm] from $fu to $ru\n");
+
+    if (!mf_process_maxfwd_header(10)) {
+        sl_send_reply(483, "Too Many Hops");
+        exit;
+    }
+
+    if (is_method("REGISTER")) {
+
+        if (!save("location")) {
+            xlog("L_ERR", "REGISTER save failed for $fu\n");
+            sl_reply_error();
+        } else {
+            xlog("L_INFO", "REGISTER saved for $fu\n");
+        }
+
+        exit;
+    }
+
+    if (is_method("INVITE")) {
+
+        xlog("L_INFO", "INVITE received, forwarding to RestComm SLEE SIP RA: $fu -> $ru\n");
+
+        $du = "sip:127.0.0.1:5070";
+
+        if (!t_relay()) {
+            xlog("L_ERR", "Failed to relay INVITE to RestComm SLEE SIP RA\n");
+            sl_reply_error();
+        }
+
+        exit;
+    }
+
+    if (!lookup("location")) {
+
+        xlog("L_WARN", "User not found: $ru\n");
+
+        sl_send_reply(404, "User Not Found");
+
+        exit;
+    }
+
+    if (!t_relay()) {
+        sl_reply_error();
+    }
+}
