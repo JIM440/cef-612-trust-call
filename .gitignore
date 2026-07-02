@@ -38,3 +38,7 @@ restcomm/**/deploy/*-contents/
 restcomm/**/deploy/*.jar
 trustcall-slee/target/
 trustcall-slee/src/main/java/**/*.bak*
+
+# Large runtime archives
+*.zip
+restcomm/*.zip
