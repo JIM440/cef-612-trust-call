@@ -22,3 +22,19 @@ Thumbs.db
 # OpenSIPS runtime
 *.pid
 *.sock
+# Runtime / restored server folders
+restcomm/jboss-5.1.0.GA/
+restcomm/jboss-5.1.0.GA-*/
+restcomm/**/*.log
+restcomm/**/tmp/
+restcomm/**/work/
+restcomm/**/data/
+restcomm/**/log/
+restcomm/**/vfs-nested.tmp/
+restcomm/**/deploy/restcomm-slee-du-*-contents/
+restcomm/**/deploy/*-contents/
+
+# Built deployables / generated archives
+restcomm/**/deploy/*.jar
+trustcall-slee/target/
+trustcall-slee/src/main/java/**/*.bak*
