@@ -41,8 +41,7 @@ public abstract class CallControlSbb implements Sbb {
         System.out.println("CallControlSbb: TrustCall decision = " + decision);
 
         if ("BLOCK".equalsIgnoreCase(decision)) {
-            System.out.println("CallControlSbb: ACTION = BLOCK CALL");
-            rejectCall(event);
+            System.out.println("CallControlSbb: ACTION = BLOCK CALL - PASSIVE SLEE OBSERVATION ONLY");
         } else if ("WARN".equalsIgnoreCase(decision)) {
             System.out.println("CallControlSbb: ACTION = WARN CALLEE THEN CONTINUE");
         } else {
