@@ -7,7 +7,7 @@ public class SleeTestRunner {
         CallControlSbb callControlSbb =
                 new CallControlSbb();
 
-        callControlSbb.onCallReceived("1002", "1001");
+        callControlSbb.onCallReceived("650100002", "650100001");
 
         System.out.println();
 

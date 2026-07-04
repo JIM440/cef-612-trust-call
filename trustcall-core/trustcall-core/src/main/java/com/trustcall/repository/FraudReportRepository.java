@@ -6,39 +6,35 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class WangiriRepository {
+public class FraudReportRepository {
 
-    public void addEvent(String phoneNumber, int eventCount) {
+    public void submitReport(String phoneNumber, String reportType) {
 
         String sql =
-                "INSERT INTO wangiri_events " +
-                "(phone_number, event_count) VALUES (?, ?)";
+                "INSERT INTO fraud_reports " +
+                "(reported_number, report_type) VALUES (?, ?)";
 
         try (
                 Connection connection = DatabaseConnection.getConnection();
                 PreparedStatement statement = connection.prepareStatement(sql)
         ) {
             statement.setString(1, phoneNumber);
-            statement.setInt(2, eventCount);
+            statement.setString(2, reportType);
             statement.executeUpdate();
 
         } catch (Exception e) {
             System.out.println(
-                    "Wangiri save database error: " + e.getMessage()
+                    "Fraud report database error: " + e.getMessage()
             );
         }
     }
 
-    public void save(com.trustcall.model.WangiriEvent event) {
-        addEvent(event.getPhoneNumber(), 1);
-    }
-
-    public int countEventsForNumber(String phoneNumber) {
+    public int countReportsForNumber(String phoneNumber) {
 
         String sql =
-                "SELECT COALESCE(SUM(event_count), 0) AS total " +
-                "FROM wangiri_events " +
-                "WHERE phone_number = ?";
+                "SELECT COUNT(*) AS total " +
+                "FROM fraud_reports " +
+                "WHERE reported_number = ?";
 
         try (
                 Connection connection = DatabaseConnection.getConnection();
@@ -54,7 +50,7 @@ public class WangiriRepository {
 
         } catch (Exception e) {
             System.out.println(
-                    "Wangiri count database error: " + e.getMessage()
+                    "Fraud count database error: " + e.getMessage()
             );
         }
 

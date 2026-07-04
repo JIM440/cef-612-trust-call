@@ -1,17 +1,12 @@
 package com.trustcall.service;
 
-import com.trustcall.model.CallerReputation;
-import com.trustcall.repository.ReputationRepository;
-import com.trustcall.repository.FraudRepository;
-import com.trustcall.model.FraudReport;
+import com.trustcall.buildingblock.FraudDetectionBuildingBlock;
+import com.trustcall.buildingblock.WangiriDetectionBuildingBlock;
+import com.trustcall.buildingblock.SimSwapBuildingBlock;
+import com.trustcall.model.CallDecision;
+import com.trustcall.repository.FraudReportRepository;
 
 public class UssdService {
-
-    private final ReputationRepository reputationRepository =
-            new ReputationRepository();
-
-    private final FraudRepository fraudRepository =
-            new FraudRepository();
 
     public String processRequest(String request) {
 
@@ -22,87 +17,79 @@ public class UssdService {
         request = request.trim();
 
         if (request.startsWith("*123*") && request.endsWith("#")) {
-            return handleModernReputationLookup(request);
-        }
+            String number = request
+                    .replace("*123*", "")
+                    .replace("#", "");
 
-        if (request.startsWith("#123#")) {
-            return handleOldReputationLookup(request);
+            return lookupNumber(number);
         }
 
         if (request.startsWith("*55*") && request.endsWith("#")) {
-            return handleModernFraudReport(request);
+            String body = request
+                    .replace("*55*", "")
+                    .replace("#", "");
+
+            String[] parts = body.split("\\*", 2);
+
+            if (parts.length < 1 || parts[0].trim().isEmpty()) {
+                return "Invalid fraud report format";
+            }
+
+            String number = parts[0].trim();
+            String reason = parts.length > 1 ? parts[1].trim() : "Fraud report";
+
+            FraudReportRepository repository =
+                    new FraudReportRepository();
+
+            repository.submitReport(number, reason);
+
+            System.out.println(
+                    "USSD FRAUD REPORT: number=" + number +
+                    " reason=" + reason
+            );
+
+            return "Report submitted for " + number;
         }
 
-        if (request.startsWith("#55#")) {
-            return handleOldFraudReport(request);
-        }
-
-        return "Unknown USSD command";
+        return "Unknown USSD command. Use *123*number# or *55*number*reason#";
     }
 
-    private String handleModernReputationLookup(String request) {
-        String phoneNumber = request
-                .replace("*123*", "")
-                .replace("#", "")
-                .trim();
+    private String lookupNumber(String number) {
 
-        return lookupReputation(phoneNumber);
-    }
+        FraudDetectionBuildingBlock fraudBlock =
+                new FraudDetectionBuildingBlock();
 
-    private String handleOldReputationLookup(String request) {
-        String phoneNumber = request
-                .replace("#123#", "")
-                .trim();
+        WangiriDetectionBuildingBlock wangiriBlock =
+                new WangiriDetectionBuildingBlock();
 
-        return lookupReputation(phoneNumber);
-    }
+        SimSwapBuildingBlock simSwapBlock =
+                new SimSwapBuildingBlock();
 
-    private String lookupReputation(String phoneNumber) {
-        CallerReputation reputation =
-                reputationRepository.findByNumber(phoneNumber);
+        int fraudReports =
+                fraudBlock.countFraudReports(number);
 
-        if (reputation == null) {
-            return "No reputation found for " + phoneNumber;
-        }
+        int wangiriEvents =
+                wangiriBlock.countWangiriEvents(number);
 
-        return "Number: " + reputation.getPhoneNumber()
-                + " | Score: " + reputation.getScore()
-                + " | Status: " + reputation.getStatus();
-    }
+        String simSwapRisk =
+                simSwapBlock.getSimSwapRisk(number);
 
-    private String handleModernFraudReport(String request) {
-        String payload = request
-                .replace("*55*", "")
-                .replace("#", "");
+        CallAnalysisService analysisService =
+                new CallAnalysisService();
 
-        String[] parts = payload.split("\\*", 2);
+        CallDecision decision =
+                analysisService.analyzeCall(
+                        number,
+                        fraudReports,
+                        wangiriEvents,
+                        simSwapRisk
+                );
 
-        if (parts.length < 2) {
-            return "Invalid report format. Use *55*number*reason#";
-        }
-
-        return saveFraudReport(parts[0], parts[1]);
-    }
-
-    private String handleOldFraudReport(String request) {
-        String payload =
-                request.replace("#55#", "");
-
-        String[] parts =
-                payload.split("#", 2);
-
-        if (parts.length < 2) {
-            return "Invalid report format. Use #55#number#reason";
-        }
-
-        return saveFraudReport(parts[0], parts[1]);
-    }
-
-    private String saveFraudReport(String phoneNumber, String reason) {
-        fraudRepository.save(
-                new FraudReport(phoneNumber.trim(), reason.trim())
-        );
-
-        return "Report submitted for " + phoneNumber.trim();
+        return "Number: " + number +
+                "\\nDecision: " + decision.getAction() +
+                "\\nScore: " + decision.getFinalScore() +
+                "\\nFraud reports: " + fraudReports +
+                "\\nWangiri events: " + wangiriEvents +
+                "\\nSIM risk: " + simSwapRisk;
     }
 }

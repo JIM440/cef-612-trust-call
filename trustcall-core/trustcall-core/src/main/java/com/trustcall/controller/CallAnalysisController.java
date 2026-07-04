@@ -14,7 +14,6 @@ public class CallAnalysisController {
 
     public void displayDecision(
             String caller,
-            int reputationScore,
             int fraudReports,
             int wangiriEvents,
             String simSwapRisk
@@ -22,7 +21,6 @@ public class CallAnalysisController {
         CallDecision decision =
                 service.analyzeCall(
                         caller,
-                        reputationScore,
                         fraudReports,
                         wangiriEvents,
                         simSwapRisk

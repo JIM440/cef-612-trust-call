@@ -1,12 +1,9 @@
 package com.trustcall;
 
-import com.trustcall.model.CallerReputation;
+import com.trustcall.buildingblock.FraudDetectionBuildingBlock;
+import com.trustcall.buildingblock.WangiriDetectionBuildingBlock;
+import com.trustcall.buildingblock.SimSwapBuildingBlock;
 import com.trustcall.model.CallDecision;
-import com.trustcall.repository.ReputationRepository;
-import com.trustcall.repository.FraudRepository;
-import com.trustcall.repository.WangiriRepository;
-import com.trustcall.repository.SimSwapRepository;
-import com.trustcall.model.SimSwapEvent;
 import com.trustcall.service.CallAnalysisService;
 
 public class TrustCallCli {
@@ -20,43 +17,30 @@ public class TrustCallCli {
 
         String caller = args[0];
 
-        ReputationRepository reputationRepository =
-                new ReputationRepository();
+        FraudDetectionBuildingBlock fraudBlock =
+                new FraudDetectionBuildingBlock();
 
-        FraudRepository fraudRepository =
-                new FraudRepository();
+        WangiriDetectionBuildingBlock wangiriBlock =
+                new WangiriDetectionBuildingBlock();
 
-        WangiriRepository wangiriRepository =
-                new WangiriRepository();
+        SimSwapBuildingBlock simSwapBlock =
+                new SimSwapBuildingBlock();
 
-        SimSwapRepository simSwapRepository =
-                new SimSwapRepository();
+        int fraudReports =
+                fraudBlock.countFraudReports(caller);
+
+        int wangiriEvents =
+                wangiriBlock.countWangiriEvents(caller);
+
+        String simSwapRisk =
+                simSwapBlock.getSimSwapRisk(caller);
 
         CallAnalysisService analysisService =
                 new CallAnalysisService();
 
-        CallerReputation reputation =
-                reputationRepository.findByNumber(caller);
-
-        int reputationScore =
-                reputation == null ? 50 : reputation.getScore();
-
-        int fraudReports =
-                fraudRepository.countReportsForNumber(caller);
-
-        int wangiriEvents =
-                wangiriRepository.countEventsForNumber(caller);
-
-        SimSwapEvent simSwapEvent =
-                simSwapRepository.findByNumber(caller);
-
-        String simSwapRisk =
-                simSwapEvent == null ? "NO SWAP" : "HIGH";
-
         CallDecision decision =
                 analysisService.analyzeCall(
                         caller,
-                        reputationScore,
                         fraudReports,
                         wangiriEvents,
                         simSwapRisk

@@ -34,7 +34,7 @@ public abstract class TrustCallSbb implements Sbb {
         System.out.println("Caller: " + caller);
         System.out.println("Callee: " + callee);
 
-        String decision = requestDecision(caller);
+        String decision = requestDecision(caller, callee);
 
         System.out.println("TrustCall Core Decision: " + decision);
 
@@ -47,11 +47,11 @@ public abstract class TrustCallSbb implements Sbb {
         }
     }
 
-    private String requestDecision(String caller) {
+    private String requestDecision(String caller, String callee) {
 
         try {
             URL url = new URL(
-                    "http://localhost:8081/decision?caller=" + caller
+                    "http://localhost:8081/decision?caller=" + caller + "&callee=" + callee
             );
 
             HttpURLConnection connection =
