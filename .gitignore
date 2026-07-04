@@ -42,3 +42,17 @@ trustcall-slee/src/main/java/**/*.bak*
 # Large runtime archives
 *.zip
 restcomm/*.zip
+
+# RestComm / JBoss runtime-generated files
+restcomm/jboss-5.1.0.GA/server/default/tmp/
+restcomm/jboss-5.1.0.GA/server/default/work/
+restcomm/jboss-5.1.0.GA/server/default/log/
+restcomm/jboss-5.1.0.GA/server/default/data/tx-object-store/
+restcomm/jboss-5.1.0.GA/server/default/data/hypersonic/*.lck
+restcomm/jboss-5.1.0.GA/server/default/data/jnp-service.url
+
+# Java / Maven generated files
+**/target/
+
+# Logs
+*.log
